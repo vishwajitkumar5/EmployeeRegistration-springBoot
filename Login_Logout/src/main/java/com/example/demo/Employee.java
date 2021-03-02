@@ -1,0 +1,137 @@
+package com.example.demo;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "register")
+public class Employee {
+
+	private Long id;
+	private String employeeName;
+	private String employeefatherName;
+	private String employeemotherName;
+	private String address;
+	private String mobileNumber;
+	private String password;
+	private String email;
+	private String whatsAppNumber;
+	private String bloodgroup;
+	private String position;
+	private String gender;
+	private String maritalStatus;
+	private String religion;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public String getEmployeefatherName() {
+		return employeefatherName;
+	}
+
+	public void setEmployeefatherName(String employeefatherName) {
+		this.employeefatherName = employeefatherName;
+	}
+
+	public String getEmployeemotherName() {
+		return employeemotherName;
+	}
+
+	public void setEmployeemotherName(String employeemotherName) {
+		this.employeemotherName = employeemotherName;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getWhatsAppNumber() {
+		return whatsAppNumber;
+	}
+
+	public void setWhatsAppNumber(String whatsAppNumber) {
+		this.whatsAppNumber = whatsAppNumber;
+	}
+
+	public String getBloodgroup() {
+		return bloodgroup;
+	}
+
+	public void setBloodgroup(String bloodgroup) {
+		this.bloodgroup = bloodgroup;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getMaritalStatus() {
+		return maritalStatus;
+	}
+
+	public void setMaritalStatus(String maritalStatus) {
+		this.maritalStatus = maritalStatus;
+	}
+
+	public String getReligion() {
+		return religion;
+	}
+
+	public void setReligion(String religion) {
+		this.religion = religion;
+	}
+
+}

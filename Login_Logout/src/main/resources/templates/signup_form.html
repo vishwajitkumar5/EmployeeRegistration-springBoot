@@ -1,0 +1,134 @@
+	
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <div>
+            <h1>Employee Registration - Sign Up</h1>
+        </div>
+        <form th:action="@{/process_register}" th:object="${register}"
+            method="post" style="max-width: 600px; margin: 0 auto;">
+        <div class="m-3">
+        
+         
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Employee Name: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{employeeName}" class="form-control"
+                            required minlength="2" maxlength="20"/>
+                </div>
+            </div>
+            
+             
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Employee Father Name: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{employeefatherName}" class="form-control"
+                            required minlength="2" maxlength="20"/>
+                </div>
+            </div>
+            
+             
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Employee Mother Name: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{employeemotherName}" class="form-control"
+                            required minlength="2" maxlength="20"/>
+                </div>
+            </div>
+            
+            
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Address: </label>
+                <div class="col-8">
+                    <input type="email" th:field="*{address}" class="form-control" required />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Mobile Number: </label>
+                <div class="col-8">
+                    <input type="email" th:field="*{mobilenumber}" class="form-control" required />
+                </div>
+            </div>
+
+
+           <div class="form-group row">
+                 <label class="col-4 col-form-label">Password: </label>
+                   <div class="col-8">
+                      <input type="password" th:field="*{password}" class="form-control"
+                             required minlength="6" maxlength="10"/>
+                  </div>
+               </div>
+            
+             <div class="form-group row">
+                <label class="col-4 col-form-label">WhatsApp Number: </label>
+                <div class="col-8">
+                    <input type="password" th:field="*{whatsAppNumber}" class="form-control"
+                            required minlength="6" maxlength="10"/>
+                </div>
+            </div>
+            
+    
+            <div class="form-group row">
+                <label class="col-4 col-form-label">E-mail: </label>
+                <div class="col-8">
+                    <input type="email" th:field="*{email}" class="form-control" required />
+                </div>
+            </div>
+          
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Blood Group: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{bloodgroup}" class="form-control"
+                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+             
+             
+             <div class="form-group row">
+                <label class="col-4 col-form-label">Position: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{position}" class="form-control"
+                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Gender: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{gender}" class="form-control"
+                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Marital Status: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{maritalStatus}" class="form-control"
+                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Religion: </label>
+                <div class="col-8">
+                    <input type="text" th:field="*{religion}" class="form-control"
+                            required minlength="2" maxlength="20" />
+                </div>
+            </div>
+             
+            <div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
