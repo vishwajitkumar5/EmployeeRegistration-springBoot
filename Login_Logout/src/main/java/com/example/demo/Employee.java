@@ -1,25 +1,56 @@
 package com.example.demo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "register")
 public class Employee {
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	@Column(name = "employeeName", nullable = false, unique = true, length = 45)
 	private String employeeName;
+
+	@Column(name = "employeefatherName", nullable = false, unique = true, length = 45)
 	private String employeefatherName;
+
+	@Column(name = "employeemotherName", nullable = false, unique = true, length = 45)
 	private String employeemotherName;
+
+	@Column(name = "address", nullable = false, unique = true, length = 45)
 	private String address;
+
+	@Column(name = "mobileNumber", nullable = false, unique = true, length = 45)
 	private String mobileNumber;
+
+	@Column(name = "password", nullable = false, unique = true, length = 45)
 	private String password;
+
+	@Column(name = "email", nullable = false, unique = true, length = 45)
 	private String email;
+
+	@Column(name = "whatsAppNumber", nullable = false, unique = true, length = 45)
 	private String whatsAppNumber;
+
+	@Column(name = "bloodgroup", nullable = false, unique = true, length = 45)
 	private String bloodgroup;
+
+	@Column(name = "position", nullable = false, unique = true, length = 45)
 	private String position;
+
+	@Column(name = "gender", nullable = false, unique = true, length = 45)
 	private String gender;
+
+	@Column(name = "maritalStatus", nullable = false, unique = true, length = 45)
 	private String maritalStatus;
+
+	@Column(name = "religion", nullable = false, unique = true, length = 45)
 	private String religion;
 
 	public Long getId() {
